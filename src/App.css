@@ -1,0 +1,4 @@
+@import "tailwindcss";
+.buildings-background{
+    background-image: url("./assets/buildings.jpg"); 
+}
