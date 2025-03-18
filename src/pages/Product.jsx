@@ -10,7 +10,7 @@ const Product = (props) =>{
     const product = props.product;
     return(
     <>
-        <div className='w-full dark:bg-black bg-white md:hidden lg:hidden fixed bottom-0 h-[75px]'>
+        <div className='w-full dark:bg-black bg-white md:hidden lg:hidden block fixed bottom-0 h-[75px]'>
             <button className="w-[calc(100%-10px)] mx-[5px] h-10 mb-[5px] rounded-md bg-red-500 text-white">Add To Cart</button>
             <div className="w-full justify-around flex dark:text-white text-black"><p>Home</p><p>Cart</p></div>
         </div>
@@ -37,7 +37,9 @@ const Product = (props) =>{
                     <p className="bg-linear-to-bl from-violet-500 to-fuchsia-500 p-1 rounded-sm mt-1"><CreditCardOutlined /> Pay in 4 simple interest free payments</p>
                     <p className="bg-linear-to-bl from-green-200 to-green-600 p-1 rounded-sm mt-1">Earn Cashback On StoreOne Card</p>
                     <p className="mt-2"><span className="bg-linear-to-bl from-yellow-200 to-yellow-600 p-1 rounded-sm mt-1 font-bold">Express</span> Get it by tomorrow!</p>
-                    <Button variant="solid" color="danger" className="mt-2 hidden md:block"><span className="text-xl font-bold" onClick={()=>{addItem(product)}}>Add To Cart</span></Button>{/*just a button and function name*/}
+                    <div className="hidden mt-2 md:block">
+                    <Button variant="solid" color="danger"><span className="text-xl font-bold" onClick={()=>{addItem(product)}}>Add To Cart</span></Button>{/*just a button and function name*/}
+                    </div>
                 </div>
             </div>
 
