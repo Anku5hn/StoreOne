@@ -42,7 +42,7 @@ const Product = (props) =>{
             </div>
 
         </div>
-        <div className="mt-[100px]">
+        <div className="mt-[500px]">
             <Footer />
         </div>
 
