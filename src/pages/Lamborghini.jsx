@@ -22,7 +22,7 @@ const Lamborghini = () => {
         company={props.company}
         price={props.price}
         discount={props.discount}
-        imgWidth="w-[500px]"
+        imgWidth="md:w-[500px] w-[250px]"
         mainName={props.mainName}
         linkName={props.linkName}
         product = {props}

@@ -37,7 +37,7 @@ const Product = (props) =>{
                     <p className="bg-linear-to-bl from-violet-500 to-fuchsia-500 p-1 rounded-sm mt-1"><CreditCardOutlined /> Pay in 4 simple interest free payments</p>
                     <p className="bg-linear-to-bl from-green-200 to-green-600 p-1 rounded-sm mt-1">Earn Cashback On StoreOne Card</p>
                     <p className="mt-2"><span className="bg-linear-to-bl from-yellow-200 to-yellow-600 p-1 rounded-sm mt-1 font-bold">Express</span> Get it by tomorrow!</p>
-                    <Button variant="solid" color="danger" className="mt-2"><span className="text-xl font-bold" onClick={()=>{addItem(product)}}>Add To Cart</span></Button>{/*just a button and function name*/}
+                    <Button variant="solid" color="danger" className="mt-2 hidden md:block"><span className="text-xl font-bold" onClick={()=>{addItem(product)}}>Add To Cart</span></Button>{/*just a button and function name*/}
                 </div>
             </div>
 
