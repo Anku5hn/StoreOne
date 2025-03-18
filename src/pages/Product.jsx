@@ -15,12 +15,14 @@ const Product = (props) =>{
             <div className="w-full justify-around flex dark:text-white text-black"><p>Home</p><p>Cart</p></div>
         </div>
         <Header />
+        <div className="hidden md:block">
         <FloatButton
             icon={<QuestionCircleOutlined />}
             type="default"
             style={{
                 insetInlineEnd: 94,
             }} />
+            </div>
         <div className="w-full items-center flex-col flex h-[500px] mt-10 text-black dark:text-white">
             <div className="w-5/6 text-gray-500"><Link to="/"><span className="text-gray-500 hover:text-gray-900">Home</span></Link><RightOutlined className="mt-1" />{props.category}<RightOutlined className="mt-1" />{props.linkName}</div>
             <div className="w-5/6 flex flex-col gap-5 items-center md:flex-row md:justify-around md:items-start mt-5">
